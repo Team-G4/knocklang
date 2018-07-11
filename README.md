@@ -8,7 +8,7 @@ uses 'io'
 
 sayHello
 
-@ sayHello {
-io.write 'hello, io'
+% sayHello {
+  io.write 'hello, io'
 }
 ```
