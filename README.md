@@ -1,2 +1,3 @@
-# knocklang
-a programming language used by the game [G4](https://g4game.wtf)
+# Knocklang
+
+Knocklang is an imperative programming language with an interpreter written in Node.js.
