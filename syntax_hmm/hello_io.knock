@@ -1,0 +1,7 @@
+uses 'io'
+
+sayHello
+
+% sayHello {
+	io.write 'hello, io'
+}
