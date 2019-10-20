@@ -1,7 +1,7 @@
-uses 'io'
+uses "io"
 
 sayHello
 
 % sayHello {
-	io.write 'hello, io'
+	io.write "hello, io"
 }
