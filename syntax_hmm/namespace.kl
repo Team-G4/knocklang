@@ -1,0 +1,19 @@
+uses "math"
+
+$ let's extend math
+ns math {
+	% sinc (x) {
+		? (x = 0) ret 1
+		ret sin(x) / x
+	}
+	
+	$ let's add a new type!
+	def vector {
+		$ tuples and destructuring would be nice tbh
+		(x, y, z) := (0, 0, 0)
+		
+		% vector (self, x, y, z) {
+			(self.x, self.y, self.z) := (x, y, z)
+		}
+	}
+}
