@@ -1,0 +1,20 @@
+def animal {
+	% .say (self) {
+		ret "*silence*"
+	}
+	
+	% .number(self) {
+		ret 42
+	}
+}
+
+def cat : animal {
+	% .say(self) {
+		ret "meow"
+	}
+	
+	% .number(self) {
+		$ the method of the parent class hides within self
+		ret self.number() + 10
+	}
+}
