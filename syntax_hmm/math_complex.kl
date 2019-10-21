@@ -25,6 +25,14 @@ def complex {
 	% .arg (self) {
 		ret math.atan2(self.imag, self.real)
 	}
+	
+	$ operator overloading
+	% operator + (self, operand) {
+		ret complex(
+			self.real + operand.real,
+			self.imag + operand.imag
+		)
+	}
 }
 
 $ example time
