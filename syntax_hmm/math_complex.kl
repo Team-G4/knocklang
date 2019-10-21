@@ -27,7 +27,7 @@ def complex {
 	}
 	
 	$ operator overloading
-	% operator + (self, operand) {
+	% op + (self, operand) {
 		ret complex(
 			self.real + operand.real,
 			self.imag + operand.imag
