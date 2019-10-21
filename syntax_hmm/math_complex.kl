@@ -5,8 +5,8 @@ def complex {
 	real := 0
 	imag := 0
 	
-	$ the constructor
-	% .complex (self, re, im) {
+	$ the constructor, no dot = static method
+	% complex (self, re, im) {
 		self.real := re
 		self.imag := im
 	}
