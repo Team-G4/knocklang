@@ -1,0 +1,33 @@
+uses "math", "io"
+
+$ A complex number
+def complex {
+	real := 0
+	imag := 0
+	
+	$ the constructor
+	% .complex (self, re, im) {
+		self.real := re
+		self.imag := im
+	}
+	
+	$ complex conjugate
+	% .conjugate (self) {
+		ret complex(self.real, -self.imag)
+	}
+	
+	$ "absolute value"
+	% .abs (self) {
+		ret math.hypot(self.real, self.imag)
+	}
+	
+	$ complex argument
+	% .arg (self) {
+		ret math.atan2(self.imag, self.real)
+	}
+}
+
+$ example time
+z1 := complex(2, 4)
+z1abs := z1.abs()
+io.write("Complex argument of (" & z1.real & " + " & z1.imag & "i) = " & z1abs)
