@@ -1,7 +1,7 @@
 uses "io"
 
-sayHello
+sayHello()
 
 % sayHello {
-	io.write "hello, io"
+	io.write("hello, io")
 }
