@@ -2,8 +2,9 @@ uses "math", "io"
 
 $ A complex number
 def complex {
-	real := 0
-	imag := 0
+	$ not static! add a .
+	.real := 0
+	.imag := 0
 	
 	$ the constructor, no dot = static method
 	% complex (self, re, im) {
